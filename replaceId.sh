@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Enter the path to the build dir: " -e CM_HOME
+if [ -z ${CM_HOME+x} ]; then read -p "Enter the path to the build dir: " -e CM_HOME; fi
 
 CM_WALLPAPER=$CM_HOME/vendor/cm/overlay/common/frameworks/base/core/res/res
 
