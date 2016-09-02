@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 if [ -z ${cmHome+x} ]; then read -p "Enter the path to the build dir: " -e cmHome; fi
 
