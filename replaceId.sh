@@ -7,30 +7,20 @@ visualId=$(pwd)
 cmWallpaper=$cmHome/vendor/cm/overlay/common/frameworks/base/core/res/res
 
 echo "Replacing wallpapers..."
-rm -rf $cmWallpaper/drawable-sw720dp-nodpi/default_wallpaper.jpg
-rm -rf $cmWallpaper/drawable-hdpi/default_wallpaper.jpg
-rm -rf $cmWallpaper/drawable-xhdpi/default_wallpaper.jpg
-rm -rf $cmWallpaper/drawable-xxxhdpi/default_wallpaper.jpg
-rm -rf $cmWallpaper/drawable-xxhdpi/default_wallpaper.jpg
-rm -rf $cmWallpaper/drawable-sw600dp-nodpi/default_wallpaper.jpg
-rm -rf $cmWallpaper/drawable-nodpi/default_wallpaper.jpg
-
-cp -rf wallpapers/default_wallpaper.jpg $cmWallpaper/drawable-sw720dp-nodpi/
-cp -rf wallpapers/default_wallpaper.jpg $cmWallpaper/drawable-hdpi/
-cp -rf wallpapers/default_wallpaper.jpg $cmWallpaper/drawable-xhdpi/
-cp -rf wallpapers/default_wallpaper.jpg $cmWallpaper/drawable-xxxhdpi/
-cp -rf wallpapers/default_wallpaper.jpg $cmWallpaper/drawable-xxhdpi/
-cp -rf wallpapers/default_wallpaper.jpg $cmWallpaper/drawable-sw600dp-nodpi/
-cp -rf wallpapers/default_wallpaper.jpg $cmWallpaper/drawable-nodpi/
+yes | cp -rf wallpapers/default_wallpaper.jpg $cmWallpaper/drawable-sw720dp-nodpi/
+yes | cp -rf wallpapers/default_wallpaper.jpg $cmWallpaper/drawable-hdpi/
+yes | cp -rf wallpapers/default_wallpaper.jpg $cmWallpaper/drawable-xhdpi/
+yes | cp -rf wallpapers/default_wallpaper.jpg $cmWallpaper/drawable-xxxhdpi/
+yes | cp -rf wallpapers/default_wallpaper.jpg $cmWallpaper/drawable-xxhdpi/
+yes | cp -rf wallpapers/default_wallpaper.jpg $cmWallpaper/drawable-sw600dp-nodpi/
+yes | cp -rf wallpapers/default_wallpaper.jpg $cmWallpaper/drawable-nodpi/
 echo "Done."
 
 cmAnimation=$cmHome/vendor/cm/prebuilt/common/bootanimation
 
 echo "Replacing boot anination..."
-rm -rf $cmAnimation/*.zip
+yes | cp -rf bootanimation/* $cmAnimation
 rm -rf $cmAnimation/halfres/*.zip
-
-cp -R bootanimation/* $cmAnimation
 cd $cmAnimation/halfres
 sh $cmAnimation/halfres/generate-half-res-anims.sh
 echo "Done."
