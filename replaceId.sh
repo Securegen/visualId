@@ -2,6 +2,8 @@
 
 if [ -z ${cmHome+x} ]; then read -p "Enter the path to the build dir: " -e cmHome; fi
 
+visualId=$(pwd)
+
 cmWallpaper=$cmHome/vendor/cm/overlay/common/frameworks/base/core/res/res
 
 echo "Replacing wallpapers..."
@@ -31,4 +33,11 @@ rm -rf $cmAnimation/halfres/*.zip
 cp -R bootanimation/* $cmAnimation
 cd $cmAnimation/halfres
 sh $cmAnimation/halfres/generate-half-res-anims.sh
+echo "Done."
+
+cmTrebuchet=$cmHome/packages/apps/Trebuchet
+
+cd $visualId
+echo "Adjusting Trebuchet..."
+yes | cp -rf trebuchet/res/xml/*.xml $cmTrebuchet/res/xml
 echo "Done."
