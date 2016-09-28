@@ -22,8 +22,8 @@
     <!-- Left screen [1] -->
     <!-- Middle screen [2] -->
     <favorite
-        launcher:packageName="com.android.deskclock"
-        launcher:className="com.android.deskclock.DeskClock"
+        launcher:packageName="info.guardianproject.orfox"
+        launcher:className="org.mozilla.search.SearchWidget"
         launcher:screen="2"
         launcher:x="0"
         launcher:y="3"
@@ -144,29 +144,29 @@
 
     <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->
     <favorite
-        launcher:packageName="org.smssecure.smssecure"
-        launcher:className="org.smssecure.smssecure.ConversationListActivity"
+        launcher:packageName="com.android.dialer"
+        launcher:className="com.android.dialer.DialtactsActivity"
         launcher:container="-101"
         launcher:screen="0"
         launcher:x="0"
         launcher:y="0" />
     <favorite
-        launcher:packageName="com.android.dialer"
-        launcher:className="com.android.dialer.DialtactsActivity"
+        launcher:packageName="com.android.contacts"
+        launcher:className="com.android.contacts.activities.PeopleActivity"
         launcher:container="-101"
         launcher:screen="1"
         launcher:x="1"
         launcher:y="0" />
     <favorite
-        launcher:packageName="com.android.contacts"
-        launcher:className="com.android.contacts.activities.PeopleActivity"
+        launcher:packageName="org.smssecure.smssecure"
+        launcher:className="org.smssecure.smssecure.ConversationListActivity"
         launcher:container="-101"
         launcher:screen="3"
         launcher:x="3"
         launcher:y="0" />
     <favorite
-        launcher:packageName="org.mozilla.firefox"
-        launcher:className="org.mozilla.gecko.BrowserApp"
+	launcher:packageName="org.thoughtcrime.securesms"
+        launcher:className="org.thoughtcrime.securesms.ApplicationContext"
         launcher:container="-101"
         launcher:screen="4"
         launcher:x="4"
