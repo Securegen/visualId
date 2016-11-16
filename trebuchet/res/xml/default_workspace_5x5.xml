@@ -19,93 +19,49 @@
 
     <!-- Left screen [1] -->
 
-    <!-- Clock Widget -->
+    <!-- Orfox Search Widget -->
     <appwidget
-        launcher:packageName="com.cyanogenmod.lockclock"
-        launcher:className="com.cyanogenmod.lockclock.ClockWidgetProvider"
+        launcher:packageName="info.guardianproject.orfox"
+        launcher:className="org.mozilla.search.SearchWidget"
         launcher:screen="1"
         launcher:x="0"
         launcher:y="0"
         launcher:spanX="5"
-        launcher:spanY="2" />
+        launcher:spanY="1"/>
 
-    <!-- Google Folder -->
-    <folder launcher:screen="1" launcher:x="0" launcher:y="4" launcher:title="@string/google_title">
-        <favorite
-            launcher:className="com.google.android.googlequicksearchbox.SearchActivity"
-            launcher:packageName="com.google.android.googlequicksearchbox" />
-        <favorite
-            launcher:packageName="com.android.chrome"
-            launcher:className="com.google.android.apps.chrome.Main" />
-        <favorite
-            launcher:className="com.google.android.gm.ConversationListActivityGmail"
-            launcher:packageName="com.google.android.gm" />
-        <favorite
-            launcher:className="com.google.android.maps.MapsActivity"
-            launcher:packageName="com.google.android.apps.maps" />
-        <favorite
-            launcher:className="com.google.android.youtube.app.honeycomb.Shell$HomeActivity"
-            launcher:packageName="com.google.android.youtube" />
-        <favorite
-            launcher:className="com.google.android.apps.docs.app.NewMainProxyActivity"
-            launcher:packageName="com.google.android.apps.docs" />
-        <favorite
-            launcher:className="com.google.android.talk.SigningInActivity"
-            launcher:packageName="com.google.android.talk" />
-        <favorite
-            launcher:className="com.google.android.apps.photos.home.HomeActivity"
-            launcher:packageName="com.google.android.apps.photos" />
-        <favorite
-            launcher:className="com.google.android.apps.wallet.entrypoint.WalletRootActivity"
-            launcher:packageName="com.google.android.apps.walletnfcrel" />
-        <favorite
-            launcher:className="com.android.calendar.AllInOneActivity"
-            launcher:packageName="com.google.android.calendar" />
-        <favorite
-            launcher:className="com.google.android.apps.plus.phone.HomeActivity"
-            launcher:packageName="com.google.android.apps.plus" />
-    </folder>
-
-    <!-- Play Folder -->
-    <folder launcher:screen="1" launcher:x="1" launcher:y="4" launcher:title="@string/play_folder_title">
-        <favorite
-            launcher:className="com.android.music.activitymanagement.TopLevelActivity"
-            launcher:packageName="com.google.android.music" />
-        <favorite
-            launcher:className="com.google.android.youtube.videos.EntryPoint"
-            launcher:packageName="com.google.android.videos" />
-        <favorite
-            launcher:className="com.google.android.gms.games.ui.destination.main.MainActivity"
-            launcher:packageName="com.google.android.play.games" />
-        <favorite
-            launcher:className="com.google.android.apps.books.app.BooksActivity"
-            launcher:packageName="com.google.android.apps.books" />
-        <favorite
-            launcher:className="com.google.apps.dots.android.app.activity.CurrentsStartActivity"
-            launcher:packageName="com.google.android.apps.magazines" />
-    </folder>
+    <!-- Camera -->
+    <favorite
+        launcher:packageName="org.cyanogenmod.snap"
+        launcher:className="com.android.camera.CameraLauncher"
+	launcher:screen="1"
+        launcher:x="4"
+        launcher:y="3" />
+	
+    <!-- Settings, Gallery, File Manager -->
+    <favorite
+        launcher:packageName="com.android.settings"
+        launcher:className="com.android.settings.Settings"
+        launcher:screen="1"
+        launcher:x="0"
+        launcher:y="4" />
 
     <favorite
-            launcher:packageName="com.cyngn.themestore"
-            launcher:className="com.cyngn.themestore.ui.StoreActivity"
-            launcher:screen="1"
-            launcher:x="3"
-            launcher:y="4" />
+	launcher:packageName="com.android.gallery3d"
+	launcher:className="com.android.gallery3d.app.GalleryActivity"
+	launcher:screen="1"
+	launcher:x="3"
+        launcher:y="4" />
 
-    <resolve
+    <favorite
+        launcher:packageName="com.cyanogenmod.filemanager"
+        launcher:className="com.cyanogenmod.filemanager.activities.NavigationActivity"
         launcher:screen="1"
         launcher:x="4"
-        launcher:y="4" >
-        <favorite
-            launcher:packageName="com.android.vending"
-            launcher:className="com.android.vending.AssetBrowserActivity" />
-        <favorite
-            launcher:packageName="org.cyanogenmod.theme.chooser"
-            launcher:className="org.cyanogenmod.theme.chooser.ChooserActivity" />
-    </resolve>
+        launcher:y="4" />
 
     <!-- Screen [2] -->
 
+    <!-- Music Widget -->
     <appwidget
         launcher:packageName="com.cyanogenmod.eleven"
         launcher:className="com.cyanogenmod.eleven.appwidgets.AppWidgetLarge"
@@ -115,41 +71,38 @@
         launcher:spanX="5"
         launcher:spanY="2" />
 
+    <!-- F-Droid, K-9, OpenKeychain, ChatSecure -->
     <favorite
-        launcher:packageName="com.android.email"
-        launcher:className="com.android.email.activity.Welcome"
+        launcher:packageName="org.fdroid.fdroid"
+        launcher:className="org.fdroid.fdroid.FDroid"
         launcher:screen="2"
         launcher:x="0"
         launcher:y="4" />
 
-    <resolve
-        launcher:screen="2"
-        launcher:x="1"
-        launcher:y="4" >
-        <favorite
-            launcher:packageName="com.cyngn.gallerynext"
-            launcher:className="com.cyngn.gallerynext.app.GalleryActivity" />
-        <favorite
-            launcher:packageName="com.android.gallery3d"
-            launcher:className="com.android.gallery3d.app.GalleryActivity" />
-    </resolve>
 
     <favorite
-        launcher:packageName="com.cyanogenmod.eleven"
-        launcher:className="com.cyanogenmod.eleven.ui.activities.HomeActivity"
+        launcher:packageName="com.fsck.k9"
+        launcher:className="com.fsck.k9.activity.Accounts"
         launcher:screen="2"
-        launcher:x="0"
+        launcher:x="2"
         launcher:y="4" />
 
     <favorite
-        launcher:packageName="com.android.settings"
-        launcher:className="com.android.settings.Settings"
+        launcher:packageName="org.sufficientlysecure.keychain"
+        launcher:className="org.sufficientlysecure.keychain.ui.MainActivity"
+        launcher:screen="2"
+        launcher:x="3"
+        launcher:y="4" />
+
+    <favorite
+        launcher:packageName="info.guardianproject.otr.app.im"
+        launcher:className="info.guardianproject.otr.app.im.app.WelcomeActivity"
         launcher:screen="2"
         launcher:x="4"
         launcher:y="4" />
 
     <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->
-    <!-- Dialer, Messaging, [All Apps], Browser, Camera -->
+    <!-- Dialer, Contacts, [All Apps], Silence, LibreSignal -->
     <resolve
         launcher:container="-101"
         launcher:screen="0"
@@ -162,9 +115,6 @@
         <favorite
             launcher:packageName="com.android.dialer"
             launcher:className="com.android.dialer.DialtactsActivity" />
-        <favorite
-            launcher:packageName="com.android.contacts"
-            launcher:className="com.android.contacts.activities.PeopleActivity" />
     </resolve>
 
     <resolve
@@ -173,11 +123,8 @@
         launcher:x="1"
         launcher:y="0" >
         <favorite
-            launcher:packageName="com.android.messaging"
-            launcher:className="com.android.messaging.ui.conversationlist.ConversationListActivity" />
-        <favorite
-            launcher:packageName="com.android.email"
-            launcher:className="com.android.email.activity.Welcome" />
+            launcher:packageName="com.android.contacts"
+            launcher:className="com.android.contacts.activities.PeopleActivity" />
     </resolve>
 
     <resolve
@@ -186,17 +133,8 @@
         launcher:x="2"
         launcher:y="0" >
         <favorite
-            launcher:packageName="org.cyanogenmod.gello.browser"
-            launcher:className="com.android.browser.BrowserActivity" />
-        <favorite
-            launcher:packageName="com.android.browser"
-            launcher:className="com.android.browser.BrowserActivity" />
-        <favorite
-            launcher:packageName="com.cyngn.browser"
-            launcher:className="com.android.browser.BrowserLauncher" />
-        <favorite
-            launcher:packageName="com.android.chrome"
-            launcher:className="com.google.android.apps.chrome.Main" />
+            launcher:packageName="org.smssecure.smssecure"
+            launcher:className="org.smssecure.smssecure.ConversationListActivity" />
     </resolve>
 
     <resolve
@@ -205,14 +143,8 @@
         launcher:x="4"
         launcher:y="0" >
         <favorite
-            launcher:packageName="com.cyngn.cameranext"
-            launcher:className="com.android.camera.CameraLauncher" />
-        <favorite
-            launcher:packageName="org.cyanogenmod.snap"
-            launcher:className="com.android.camera.CameraLauncher" />
-        <favorite
-            launcher:packageName="com.android.camera2"
-            launcher:className="com.android.camera.CameraLauncher" />
+            launcher:packageName="org.thoughtcrime.securesms"
+            launcher:className="org.thoughtcrime.securesms.ConversationListActivity" />
     </resolve>
 
 </favorites>
