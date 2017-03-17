@@ -21,7 +21,7 @@
 
     <!-- Orfox Search Widget -->
     <appwidget
-        launcher:packageName="info.guardianproject.orfox"
+        launcher:packageName="org.mozilla.firefox"
         launcher:className="org.mozilla.search.SearchWidget"
         launcher:screen="1"
         launcher:x="0"
@@ -53,8 +53,8 @@
         launcher:y="3" />
 
     <favorite
-        launcher:packageName="com.cyanogenmod.filemanager"
-        launcher:className="com.cyanogenmod.filemanager.activities.NavigationActivity"
+        launcher:packageName="com.android.documentsui"
+        launcher:className="com.android.documentsui.SettingsActivity"
         launcher:screen="1"
         launcher:x="3"
         launcher:y="3" />
